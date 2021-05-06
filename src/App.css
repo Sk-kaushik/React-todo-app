@@ -2,37 +2,109 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header {
+  background: #0479ff;
+  height: 10vh;
+  line-height: 10vh;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+ul {
+  height: 40%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+li {
+  height: 40%;
+  width: 97%;
+  list-style-type: none;
+  font-size: 1.3em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+  padding: 10px 10px;
+  transition: 0.2s;
+}
+.link {
+  height: 20%;
+  width: 97%;
+  padding: 0px 12px;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 10px 0;
+  color: white;
+}
+i {
+  width: 5%;
+  padding-right: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sideNav div {
+  display: flex;
+}
+.link:hover {
+  background: white;
+  color: #0479ff;
+}
+
+/* .active-link {
+  background: red;
+} */
+
+.mainContainer {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+}
+
+.sideNav {
+  width: 20%;
+  background: #0479ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workspace {
+  width: 80%;
+  background: #fff;
+}
+
+.all-tasks {
+  display: flex;
+  justify-content: space-evenly;
+}
+.task-list {
+  width: 70%;
+  padding: 2em 0;
+}
+.clock {
+  background: #fff;
+  margin: 4em 0;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  box-shadow: 4px 4px 10px #b6b6b6;
+}
+.clock h3 {
+  font-weight: 500;
+}
+.clock-container {
+  width: 10%;
+}
+
+.active {
+  height: 60%;
+  background: white;
+  color: #0479ff;
 }

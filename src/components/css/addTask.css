@@ -1,0 +1,61 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+.task-input {
+  height: 4em;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.task-input input {
+  height: 100%;
+  width: 80%;
+  background: #fff;
+  margin: 4em 2em;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 4px 4px 14px #b6b6b6;
+  border: none;
+  outline: none;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #535353;
+  z-index: 9;
+}
+.task-input button {
+  display: inline-block;
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  background: none;
+  box-shadow: 4px 4px 14px #b6b6b6;
+  border: none;
+  transition: 0.3s;
+  background: #0479ff;
+  color: white;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background: #fff;
+  color: #0479ff;
+}
+.task-input i {
+  width: 3em;
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.task-successfull {
+  position: absolute;
+  left: 50px;
+  z-index: 1;
+  color: #0479ff;
+  transition: 0.1s;
+}

@@ -1,0 +1,96 @@
+.task-item-container {
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+  z-index: 99 !important;
+}
+
+.task-item {
+  height: 4em;
+  width: 60%;
+  background: #fff;
+  margin: 2em 0;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 4px 4px 14px #b6b6b6;
+  position: relative;
+}
+.task-item h1 {
+  font-size: 1.2em;
+  color: #535353;
+  font-weight: 500;
+}
+
+.task-buttons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.task-item i {
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 10px 10px;
+  line-height: 16px;
+  color: white;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.task-buttons i:hover {
+  transform: scale(1.2);
+}
+
+.task-buttons .fa-check {
+  background: #2afa61;
+}
+
+.task-buttons .fa-star {
+  background: #0479ff;
+  font-size: 0.8em;
+}
+.task-buttons .fa-times {
+  background: #0479ff;
+}
+.task-buttons .fa-trash {
+  background: red;
+}
+.task-buttons .fa-bell {
+  background: #ff8320;
+}
+.task-buttons .fa-check:hover {
+  background: #fff;
+  color: #2afa61;
+}
+
+.task-buttons .fa-star:hover {
+  background: #fff;
+  color: #0479ff;
+}
+.task-buttons .fa-times:hover {
+  background: #fff;
+  color: #0479ff;
+}
+.task-buttons .fa-trash:hover {
+  background: #fff;
+  color: red;
+}
+.task-buttons .fa-bell:hover {
+  background: #fff;
+  color: #ff8320;
+}
+
+.red {
+  background: red;
+}
+
+.isFinished {
+  position: absolute;
+  right: 0em;
+}
