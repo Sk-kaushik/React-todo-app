@@ -2,7 +2,6 @@
   /* display: flex;
   justify-content: center; */
   position: relative;
-  z-index: 99 !important;
 }
 
 .task-item {
@@ -93,4 +92,89 @@
 .isFinished {
   position: absolute;
   right: 0em;
+}
+
+.reminder-container {
+  width: 400px;
+  height: 300px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.modal-overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(46, 46, 46, 0.767);
+}
+
+.reminder-heading {
+  color: #0479ff;
+}
+
+.reminder-input {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reminder-heading span {
+  color: red;
+  font-size: 0.8em;
+}
+
+.reminder-heading {
+  margin: 30px 0;
+}
+.reminder-heading h1 {
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 500;
+}
+
+.reminder-input input {
+  width: 40%;
+  height: 50px;
+  text-align: center;
+  align-self: center;
+  margin: 0 10px;
+}
+
+.reminder-btn {
+  margin-top: 40px;
+}
+.reminder-btn button {
+  padding: 10px 10px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.set-reminder {
+  background: #0479ff;
+}
+.set-reminder:hover {
+  background: #046de6;
+}
+
+.cancel {
+  background: red;
+}
+
+.cancel:hover {
+  background: rgb(238, 2, 2);
 }
